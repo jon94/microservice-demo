@@ -38,7 +38,7 @@ spec:
               - all
           privileged: false
         #   readOnlyRootFilesystem: true
-        image: smazzone/adservice
+        image: smazzone/adservice:v.0.5.0-8-gd185be4
         ports:
         - containerPort: 9555
         env:
@@ -126,7 +126,7 @@ spec:
               - all
           privileged: false
           # readOnlyRootFilesystem: true
-        image: smazzone/cartservice
+        image: smazzone/cartservice:v.0.5.0-8-gd185be4
         ports:
         - containerPort: 7070
         env:
@@ -204,7 +204,7 @@ spec:
                 - all
             privileged: false
             # readOnlyRootFilesystem: true
-          image: smazzone/checkoutservice
+          image: smazzone/checkoutservice:v.0.5.0-8-gd185be4
           ports:
           - containerPort: 5050
           # readinessProbe:
@@ -300,7 +300,7 @@ spec:
               - all
           privileged: false
           # readOnlyRootFilesystem: true
-        image: smazzone/currencyservice
+        image: smazzone/currencyservice:v.0.5.0-8-gd185be4
         ports:
         - name: grpc
           containerPort: 7000
@@ -385,7 +385,7 @@ spec:
         #       - all
         #   privileged: false
         #   readOnlyRootFilesystem: true
-        image: smazzone/emailservice
+        image: smazzone/emailservice:v.0.5.0-8-gd185be4
         ports:
         - containerPort: 8080
         env:
@@ -470,7 +470,7 @@ spec:
                 - all
             privileged: false
             # readOnlyRootFilesystem: true
-          image: smazzone/frontend
+          image: smazzone/frontend:v.0.5.0-8-gd185be4
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -619,7 +619,7 @@ spec:
               - all
           privileged: false
           readOnlyRootFilesystem: true
-        image: smazzone/loadgenerator
+        image: smazzone/loadgenerator:v.0.5.0-8-gd185be4
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -672,7 +672,7 @@ spec:
               - all
           privileged: false
           # readOnlyRootFilesystem: true
-        image: smazzone/paymentservice
+        image: smazzone/paymentservice:v.0.5.0-8-gd185be4
         ports:
         - containerPort: 50051
         env:
@@ -754,7 +754,7 @@ spec:
           #     - all
           # privileged: false
           # readOnlyRootFilesystem: true
-        image: smazzone/productcatalogservice
+        image: smazzone/productcatalogservice:v.0.5.0-8-gd185be4
         ports:
         - containerPort: 3550
         env:
@@ -838,7 +838,7 @@ spec:
         #       - all
         #   privileged: false
         #   readOnlyRootFilesystem: true
-        image: smazzone/recommendationservice
+        image: smazzone/recommendationservice:v.0.5.0-8-gd185be4
         ports:
         - containerPort: 8080
         # readinessProbe:
@@ -990,7 +990,7 @@ spec:
               - all
           privileged: false
           # readOnlyRootFilesystem: true
-        image: smazzone/shippingservice
+        image: smazzone/shippingservice:v.0.5.0-8-gd185be4
         ports:
         - containerPort: 50051
         env:
