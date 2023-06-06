@@ -401,8 +401,8 @@ spec:
           value: "1"
         - name: DD_RUNTIME_METRICS_ENABLED
           value: "true"
-        - name: DD_PROFILING_ENABLED
-          value: "true"
+        # - name: DD_PROFILING_ENABLED
+        #   value: "true"
         # readinessProbe:
         #   periodSeconds: 5
         #   exec:
@@ -516,8 +516,8 @@ spec:
             value: "0"
           # - name: CYMBAL_BRANDING
           #   value: "true"
-          - name: DD_PROFILING_ENABLED
-            value: "true"
+          # - name: DD_PROFILING_ENABLED
+          #   value: "true"
           - name: DD_LOGS_INJECTION
             value: "true"
           - name: DD_TRACE_SAMPLE_RATE
